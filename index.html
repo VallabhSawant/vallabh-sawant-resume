@@ -21,11 +21,10 @@
                     },
                     colors: {
                         brand: {
-                            50: '#f0f7ff',
-                            100: '#e0effe',
+                            50: '#eff6ff',
+                            100: '#dbeafe',
                             600: '#2563eb',
                             700: '#1d4ed8',
-                            800: '#1e40af',
                             900: '#0f172a'
                         }
                     }
@@ -35,183 +34,238 @@
     </script>
     <style>
         body {
-            background-color: #f8fafc;
+            background-color: #fafafa;
             color: #0f172a;
         }
-        .white-card {
+        .clean-card {
             background: #ffffff;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.03), 0 1px 2px -1px rgba(15, 23, 42, 0.03);
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+            transition: all 0.2s ease;
         }
-        .white-card:hover {
+        .clean-card:hover {
             border-color: #cbd5e1;
-            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
-            transform: translateY(-2px);
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #0284c7 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .timeline-line::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 20px;
-            width: 2px;
-            background: linear-gradient(180deg, #2563eb 0%, #cbd5e1 100%);
+            box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
-<body class="font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+<body class="font-sans antialiased selection:bg-blue-100 selection:text-blue-900 text-slate-800">
 
-    <!-- Navigation Bar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 px-6 py-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-3">
-                <span class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-black text-sm shadow-sm">VS</span>
-                <span class="font-extrabold">Vallabh Sawant</span>
+    <!-- Minimalist Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-lg font-extrabold tracking-tight text-slate-900 flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-xs">VS</span>
+                <span>Vallabh Sawant</span>
             </a>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+            <div class="hidden md:flex items-center space-x-7 text-xs font-semibold text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#metrics" class="hover:text-blue-600 transition-colors">Impact & Metrics</a>
                 <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
-                <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
                 <a href="#education" class="hover:text-blue-600 transition-colors">Education</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
                 <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="about" class="pt-36 pb-20 px-6 relative">
-        <div class="max-w-6xl mx-auto">
-            
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-blue-50 text-xs font-bold text-blue-700 mb-6 border border-blue-200/60 shadow-sm">
-                <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-pulse"></span> Business Analytics Manager @ JBS USA
+    <!-- Header / Hero Section -->
+    <section id="about" class="pt-28 pb-10 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-[11px] font-bold text-blue-700 mb-4 border border-blue-100">
+                <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span> Business Analytics Manager @ JBS USA
             </div>
             
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
-                Driving Enterprise Growth Through <br><span class="gradient-text">Analytics & Data Strategy</span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mb-4 leading-tight">
+                Business Analytics Manager & Data Strategist
             </h1>
 
-            <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mb-10 leading-relaxed font-normal">
-                10+ years of experience leading statistical demand forecasting (S&OP), enterprise business intelligence, and cross-functional analytics initiatives. Dual Master's background bridging modern data architecture with strategic P&L decision-making.
+            <p class="text-base text-slate-600 max-w-2xl mb-6 leading-relaxed">
+                10+ years of experience leading statistical demand forecasting (S&OP), enterprise business intelligence, and cloud data architecture. Dual Master's background bridging quantitative analytics with strategic executive leadership.
             </p>
 
-            <div class="flex flex-wrap gap-4 mb-16">
-                <a href="#contact" class="px-7 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold flex items-center gap-3 transition-all shadow-sm">
-                    <i class="fa-solid fa-paper-plane"></i> Get In Touch
+            <div class="flex flex-wrap gap-3">
+                <a href="mailto:vallabh.sawant@gmail.com" class="px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs flex items-center gap-2 transition-all shadow-sm">
+                    <i class="fa-solid fa-envelope"></i> Get In Touch
                 </a>
-                <a href="Vallabh_Sawant_Resume.docx" download class="px-7 py-4 rounded-xl white-card text-slate-800 hover:text-blue-600 font-bold flex items-center gap-3 transition-all">
-                    <i class="fa-solid fa-file-arrow-down text-blue-600 text-xl"></i> Download Resume
+                <a href="Vallabh_Sawant_Resume.docx" download class="px-5 py-2.5 rounded-lg clean-card text-slate-700 hover:text-blue-600 font-bold text-xs flex items-center gap-2 transition-all">
+                    <i class="fa-solid fa-file-arrow-down text-blue-600"></i> Download Resume
                 </a>
-                <a href="https://www.linkedin.com/in/vallabh-sawant/" target="_blank" class="px-7 py-4 rounded-xl white-card text-slate-800 hover:text-blue-600 font-bold flex items-center gap-3 transition-all">
-                    <i class="fa-brands fa-linkedin text-blue-600 text-xl"></i> LinkedIn Profile
+                <a href="https://www.linkedin.com/in/vallabh-sawant/" target="_blank" class="px-5 py-2.5 rounded-lg clean-card text-slate-700 hover:text-blue-600 font-bold text-xs flex items-center gap-2 transition-all">
+                    <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
                 </a>
             </div>
-
-            <!-- Key Impact Metrics Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
-                <div class="white-card p-6 rounded-2xl border-t-4 border-t-blue-600">
-                    <div class="text-4xl font-extrabold text-slate-900 mb-1">10+</div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">Years Experience</div>
-                </div>
-                <div class="white-card p-6 rounded-2xl border-t-4 border-t-blue-600">
-                    <div class="text-4xl font-extrabold text-blue-600 mb-1">60%</div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">Effort Automated</div>
-                </div>
-                <div class="white-card p-6 rounded-2xl border-t-4 border-t-sky-500">
-                    <div class="text-4xl font-extrabold text-slate-900 mb-1">25+</div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">BI Dashboards</div>
-                </div>
-                <div class="white-card p-6 rounded-2xl border-t-4 border-t-emerald-500">
-                    <div class="text-4xl font-extrabold text-emerald-600 mb-1">4.00</div>
-                    <div class="text-xs uppercase tracking-wider text-slate-500 font-bold">MS PM GPA</div>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Experience Timeline Section -->
-    <section id="experience" class="py-20 px-6 bg-white border-y border-slate-200">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">Leadership Experience</h2>
-            <p class="text-slate-500 mb-12 font-medium">Proven track record across analytics management, demand planning, and product ownership.</p>
+    <!-- Quantified Impact & Metrics Section -->
+    <section id="metrics" class="py-10 px-6 bg-white border-y border-slate-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-6">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Quantified Impact</span>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1">Key Operational Metrics</h2>
+            </div>
 
-            <div class="relative timeline-line space-y-12 pl-10 sm:pl-12">
-                
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl font-extrabold text-blue-600">60%</div>
+                    <div class="text-xs font-bold text-slate-800 mt-1">Manual Effort Saved</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">Automated Business Objects & Excel reporting</div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl font-extrabold text-slate-900">75%</div>
+                    <div class="text-xs font-bold text-slate-800 mt-1">Product Efficiency Gain</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">Trading platform workflows & enhancements</div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl font-extrabold text-blue-600">8</div>
+                    <div class="text-xs font-bold text-slate-800 mt-1">Team Resources Led</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">Trading platform implementation team leadership</div>
+                </div>
+
+                <div class="p-5 rounded-xl bg-slate-50 border border-slate-100">
+                    <div class="text-3xl font-extrabold text-emerald-600">98%</div>
+                    <div class="text-xs font-bold text-slate-800 mt-1">On-Time Release Rate</div>
+                    <div class="text-[11px] text-slate-500 mt-0.5">Sprint release execution & stakeholder delivery</div>
+                </div>
+            </div>
+
+            <!-- Footnote Highlights -->
+            <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap gap-6 text-xs font-semibold text-slate-600">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-cubes text-blue-600"></i> 25+ Enterprise BI Apps</span>
+                <span class="flex items-center gap-2"><i class="fa-solid fa-users text-blue-600"></i> 20+ Key Stakeholders Aligned</span>
+                <span class="flex items-center gap-2"><i class="fa-solid fa-list-check text-blue-600"></i> 1,200+ Test Protocols Managed</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-10 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-6">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Career History</span>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1">Professional Experience</h2>
+            </div>
+
+            <div class="space-y-6 max-w-4xl">
                 <!-- Role 1: Business Analytics Manager -->
-                <div class="relative">
-                    <div class="absolute -left-[49px] sm:-left-[58px] top-1.5 w-7 h-7 rounded-full bg-blue-600 border-4 border-white shadow-md"></div>
-                    <div class="white-card p-6 sm:p-8 rounded-2xl">
-                        <div class="flex flex-wrap justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-slate-900">Business Analytics Manager</h3>
-                                <div class="text-blue-600 font-semibold text-sm">JBS USA · Greeley, CO</div>
-                            </div>
-                            <span class="px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-extrabold border border-blue-200/60 mt-2 sm:mt-0">Jun 2026 – Present</span>
+                <div class="clean-card p-6 rounded-xl">
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Business Analytics Manager</h3>
+                            <div class="text-xs text-blue-600 font-semibold">JBS USA · Greeley, CO</div>
                         </div>
-                        <ul class="space-y-3 text-slate-600 text-sm leading-relaxed mb-6 font-normal">
-                            <li class="flex gap-3"><i class="fa-solid fa-angle-right text-blue-600 mt-1"></i> <span><strong>S&OP Governance:</strong> Lead enterprise demand planning activities across Sales, Marketing, Finance, Supply Chain, and Operations, aligning SKU statistical forecasts with corporate growth objectives.</span></li>
-                            <li class="flex gap-3"><i class="fa-solid fa-angle-right text-blue-600 mt-1"></i> <span><strong>Statistical Modeling:</strong> Manage and refine statistical forecasting models, evaluating historical demand, pricing dynamics, and inventory drivers to minimize forecast variance.</span></li>
-                            <li class="flex gap-3"><i class="fa-solid fa-angle-right text-blue-600 mt-1"></i> <span><strong>AI & Automation:</strong> Leverage Claude AI to automate complex data processing, recurring demand workflows, and executive reporting suites.</span></li>
-                        </ul>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Demand Planning</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">S&OP Governance</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Claude AI</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">P&L Optimization</span>
-                        </div>
+                        <span class="text-xs text-slate-500 font-semibold">Jun 2026 – Present</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-600 leading-relaxed mb-4">
+                        <li>• <strong>Demand Planning & S&OP Governance:</strong> Lead SKU-level statistical demand forecasting across Sales, Marketing, Finance, Supply Chain, and Operations to support corporate growth objectives.</li>
+                        <li>• <strong>Statistical Forecasting & P&L Alignment:</strong> Manage statistical forecasting models analyzing historical demand, pricing dynamics, and inventory drivers, collaborating with Finance on P&L variance analysis and annual budgeting.</li>
+                        <li>• <strong>Executive Dashboards & KPI Monitoring:</strong> Develop KPI dashboards to monitor forecast accuracy, sales performance, inventory levels, and operational drivers for leadership decision-making.</li>
+                        <li>• <strong>Claude AI Integration:</strong> Leverage Claude AI to automate complex data processing, recurring demand planning tasks, and executive reporting suites, significantly reducing manual overhead.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-1.5 text-[11px]">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Demand Planning</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">S&OP Governance</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Claude AI</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">P&L Optimization</span>
                     </div>
                 </div>
 
                 <!-- Role 2: Senior Business Analyst -->
-                <div class="relative">
-                    <div class="absolute -left-[49px] sm:-left-[58px] top-1.5 w-7 h-7 rounded-full bg-slate-300 border-4 border-white"></div>
-                    <div class="white-card p-6 sm:p-8 rounded-2xl">
-                        <div class="flex flex-wrap justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-slate-900">Senior Business Analyst</h3>
-                                <div class="text-blue-600 font-semibold text-sm">JBS USA · Greeley, CO</div>
-                            </div>
-                            <span class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-600 text-xs font-bold border border-slate-200 mt-2 sm:mt-0">Aug 2022 – Jun 2026</span>
+                <div class="clean-card p-6 rounded-xl">
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Senior Business Analyst</h3>
+                            <div class="text-xs text-blue-600 font-semibold">JBS USA · Greeley, CO</div>
                         </div>
-                        <ul class="space-y-3 text-slate-600 text-sm leading-relaxed mb-6">
-                            <li class="flex gap-3"><i class="fa-solid fa-angle-right text-blue-600 mt-1"></i> <span><strong>Enterprise BI Ecosystem:</strong> Architected 25+ Qlik Sense dashboards and NPrinting applications, unifying Snowflake, SAP HANA, SQL Server, and Excel.</span></li>
-                            <li class="flex gap-3"><i class="fa-solid fa-angle-right text-blue-600 mt-1"></i> <span><strong>Process Modernization:</strong> Reduced manual reporting effort by <strong class="text-slate-900">60%</strong> by converting legacy Excel and Business Objects reports into scalable cloud data models.</span></li>
-                            <li class="flex gap-3"><i class="fa-solid fa-angle-right text-blue-600 mt-1"></i> <span><strong>Mentorship & Standards:</strong> Mentored team members on analytics best practices and established standardized development guidelines across business units.</span></li>
-                        </ul>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Qlik Sense</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Snowflake</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">SQL Modeling</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">SAP HANA</span>
-                        </div>
+                        <span class="text-xs text-slate-500 font-semibold">Aug 2022 – Jun 2026</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-600 leading-relaxed mb-4">
+                        <li>• <strong>Enterprise BI Architecture:</strong> Architected 25+ Qlik Sense dashboards and NPrinting automated applications using Set Analysis and Vizlib, integrating Snowflake, SAP HANA, SQL Server, and Excel.</li>
+                        <li>• <strong>Cloud Data Modeling in Snowflake:</strong> Designed Snowflake views, complex SQL queries, and transformation pipelines to deliver scalable reporting across Finance, Operations, and Supply Chain.</li>
+                        <li>• <strong>Legacy Process Modernization:</strong> Reduced manual reporting effort by <strong>60%</strong> by converting legacy Business Objects, Shopfloor systems, and Excel reports into automated cloud models.</li>
+                        <li>• <strong>Stakeholder Alignment & Mentorship:</strong> Partnered with executive stakeholders to translate business requirements into analytical solutions while mentoring team members on analytics best practices.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-1.5 text-[11px]">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Qlik Sense</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Snowflake</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">SQL Modeling</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">SAP HANA</span>
                     </div>
                 </div>
 
                 <!-- Role 3: Product Owner & Product Analyst -->
-                <div class="relative">
-                    <div class="absolute -left-[49px] sm:-left-[58px] top-1.5 w-7 h-7 rounded-full bg-slate-300 border-4 border-white"></div>
-                    <div class="white-card p-6 sm:p-8 rounded-2xl">
-                        <div class="flex flex-wrap justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-slate-900">Product Owner & Product Analyst</h3>
-                                <div class="text-blue-600 font-semibold text-sm">CapitalMarkets.Technology & ITIVITI AB · Mumbai, India</div>
-                            </div>
-                            <span class="px-3.5 py-1.5 rounded-full bg-slate-100 text-slate-600 text-xs font-bold border border-slate-200 mt-2 sm:mt-0">2016 – 2020</span>
+                <div class="clean-card p-6 rounded-xl">
+                    <div class="flex flex-wrap justify-between items-baseline mb-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Product Owner & Product Analyst</h3>
+                            <div class="text-xs text-blue-600 font-semibold">CapitalMarkets.Technology & ITIVITI AB · Mumbai, India</div>
                         </div>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Managed electronic trading platform product roadmaps, agile backlog prioritization, and test automation. Delivered 75% product efficiency gain and managed a team of 8 resources supporting enterprise deployments.
-                        </p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Agile / Scrum</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">JIRA</span>
-                            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-semibold">Trading Platforms</span>
-                        </div>
+                        <span class="text-xs text-slate-500 font-semibold">2016 – 2020</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-600 leading-relaxed mb-4">
+                        <li>• <strong>Agile Roadmap & Sprint Governance:</strong> Managed product roadmaps, sprint backlogs, and stakeholder delivery for electronic trading platforms, achieving a <strong>98% on-time release rate</strong>.</li>
+                        <li>• <strong>Workflow Optimization & Product Adoption:</strong> Delivered a <strong>75% product efficiency gain</strong> through workflow enhancements, resolving 35+ JIRA requests and driving a <strong>27% increase in product adoption</strong>.</li>
+                        <li>• <strong>Team Leadership & Stakeholder Management:</strong> Led a team of <strong>8 resources</strong> supporting trading implementations, managing <strong>1,200+ SQL-based test protocols</strong> and collaborating with <strong>20+ key stakeholders</strong>.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-1.5 text-[11px]">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Agile / Scrum</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">JIRA</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Trading Platforms</span>
+                        <span class="px-2.5 py-0.5 rounded bg-slate-100 text-slate-600 font-medium">Team Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLEAN EXECUTIVE EDUCATION SECTION -->
+    <section id="education" class="py-10 px-6 bg-white border-y border-slate-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-6">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Academic Background</span>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1">Education Credentials</h2>
+            </div>
+
+            <!-- Clean Executive Divider Rows -->
+            <div class="divide-y divide-slate-100 max-w-4xl">
+                
+                <!-- Degree 1 -->
+                <div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <div class="text-base font-bold text-slate-900">Master of Science in Project Management</div>
+                        <div class="text-xs text-slate-500 font-medium mt-0.5">Harrisburg University of Science and Technology · Harrisburg, PA</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs text-slate-400 font-semibold">June 2027</span>
+                        <span class="px-2.5 py-1 rounded bg-blue-50 text-blue-700 text-xs font-bold border border-blue-100">GPA 4.00</span>
+                    </div>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <div class="text-base font-bold text-slate-900">Master of Science in IT and Analytics</div>
+                        <div class="text-xs text-slate-500 font-medium mt-0.5">Rutgers University – School of Business · Newark, NJ</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs text-slate-400 font-semibold">May 2022</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200">GPA 3.73</span>
+                    </div>
+                </div>
+
+                <!-- Degree 3 -->
+                <div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <div class="text-base font-bold text-slate-900">Bachelor of Engineering in Computer Engineering</div>
+                        <div class="text-xs text-slate-500 font-medium mt-0.5">University of Mumbai · Mumbai, India</div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-xs text-slate-400 font-semibold">May 2016</span>
+                        <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-bold border border-slate-200">GPA 3.45</span>
                     </div>
                 </div>
 
@@ -219,143 +273,52 @@
         </div>
     </section>
 
-    <!-- Interactive Skills Section -->
-    <section id="skills" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">Technical & Strategic Competencies</h2>
-            <p class="text-slate-500 mb-8 font-medium">Filter through core skill sets and platforms.</p>
-
-            <!-- Skill Filter Buttons -->
-            <div class="flex flex-wrap gap-3 mb-10" id="filter-buttons">
-                <button onclick="filterSkills('all')" class="filter-btn active px-5 py-2.5 rounded-xl text-xs font-bold bg-blue-600 text-white transition-all shadow-sm">All Skills</button>
-                <button onclick="filterSkills('strategy')" class="filter-btn px-5 py-2.5 rounded-xl text-xs font-bold white-card text-slate-700 hover:bg-slate-50 transition-all">Management & Strategy</button>
-                <button onclick="filterSkills('bi')" class="filter-btn px-5 py-2.5 rounded-xl text-xs font-bold white-card text-slate-700 hover:bg-slate-50 transition-all">BI & Visualization</button>
-                <button onclick="filterSkills('engineering')" class="filter-btn px-5 py-2.5 rounded-xl text-xs font-bold white-card text-slate-700 hover:bg-slate-50 transition-all">Cloud & Engineering</button>
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-10 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-6">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Capabilities</span>
+                <h2 class="text-2xl font-bold text-slate-900 mt-1">Technical & Strategic Competencies</h2>
             </div>
 
-            <!-- Skills Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="skills-grid">
-                
-                <div class="skill-card white-card p-6 rounded-2xl" data-category="strategy">
-                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">S&OP & Demand Planning</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">SKU-level statistical forecasting, sales alignment, MAPE reduction, inventory optimization.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
+                <div class="clean-card p-5 rounded-xl">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Programming & Databases</h3>
+                    <div class="text-xs font-semibold text-slate-800 leading-relaxed">SQL, Python, Snowflake, SAP HANA, R, Java, Pandas, NumPy</div>
                 </div>
 
-                <div class="skill-card white-card p-6 rounded-2xl" data-category="bi">
-                    <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-cubes"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Qlik Sense & Power BI</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Enterprise dashboard architecture, Set Analysis, Vizlib, NPrinting automated distribution.</p>
+                <div class="clean-card p-5 rounded-xl">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">BI & Visualization</h3>
+                    <div class="text-xs font-semibold text-slate-800 leading-relaxed">Qlik Sense, Power BI, Tableau, Vizlib, NPrinting, Alteryx, Excel</div>
                 </div>
 
-                <div class="skill-card white-card p-6 rounded-2xl" data-category="engineering">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-database"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Snowflake & SQL</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Data view modeling, query optimization, data warehouse architecture, SAP HANA integration.</p>
+                <div class="clean-card p-5 rounded-xl">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Domain & Business Strategy</h3>
+                    <div class="text-xs font-semibold text-slate-800 leading-relaxed">S&OP, Demand Planning, Statistical Forecasting, P&L Analysis, Budgeting</div>
                 </div>
 
-                <div class="skill-card white-card p-6 rounded-2xl" data-category="engineering">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-code"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Python & Claude AI</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Pandas, NumPy, statistical modeling, workflow automation, prompt engineering.</p>
+                <div class="clean-card p-5 rounded-xl">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Tools & AI Workflow</h3>
+                    <div class="text-xs font-semibold text-slate-800 leading-relaxed">Claude AI, Jira, Confluence, Git, Agile/Scrum Governance</div>
                 </div>
-
-                <div class="skill-card white-card p-6 rounded-2xl" data-category="strategy">
-                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-users-gear"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">Agile & Project Governance</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Agile/Scrum, JIRA, stakeholder management, cross-functional team leadership.</p>
-                </div>
-
-                <div class="skill-card white-card p-6 rounded-2xl" data-category="strategy">
-                    <div class="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl mb-4"><i class="fa-solid fa-file-invoice-dollar"></i></div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-2">P&L & Financial Analytics</h3>
-                    <p class="text-slate-500 text-xs leading-relaxed">Annual budgeting, sales volume projections, cost reduction, P&L variance analysis.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="py-20 px-6 bg-white border-t border-slate-200">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-2">Education Credentials</h2>
-            <p class="text-slate-500 mb-12 font-medium">Dual Master's degrees spanning project governance and business analytics.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <div class="white-card p-7 rounded-2xl border-t-4 border-t-blue-600">
-                    <div class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2">2025 – 2027</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">MS in Project Management</h3>
-                    <div class="text-xs text-slate-500 mb-4 font-medium">Harrisburg University of Science and Tech</div>
-                    <span class="px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-extrabold border border-blue-200/60">GPA: 4.00</span>
-                </div>
-
-                <div class="white-card p-7 rounded-2xl border-t-4 border-t-sky-500">
-                    <div class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-2">2020 – 2022</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">MS in IT & Analytics</h3>
-                    <div class="text-xs text-slate-500 mb-4 font-medium">Rutgers University – School of Business</div>
-                    <span class="px-3 py-1.5 rounded-lg bg-sky-50 text-sky-700 text-xs font-extrabold border border-sky-200/60">GPA: 3.73</span>
-                </div>
-
-                <div class="white-card p-7 rounded-2xl border-t-4 border-t-indigo-500">
-                    <div class="text-xs font-bold text-indigo-600 uppercase tracking-wider mb-2">2012 – 2016</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-1">BE in Computer Engineering</h3>
-                    <div class="text-xs text-slate-500 mb-4 font-medium">University of Mumbai</div>
-                    <span class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-extrabold border border-indigo-200/60">GPA: 3.45</span>
-                </div>
-
             </div>
         </div>
     </section>
 
     <!-- Footer / Contact Section -->
-    <section id="contact" class="py-20 px-6">
-        <div class="max-w-4xl mx-auto white-card p-10 sm:p-14 rounded-3xl text-center shadow-lg">
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Let's Connect</h2>
-            <p class="text-slate-600 max-w-lg mx-auto mb-10 text-sm sm:text-base font-medium">
-                Open to executive business analytics discussions, S&OP leadership opportunities, or strategic consulting engagements.
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
-                <a href="mailto:vallabh.sawant@gmail.com" class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white flex items-center gap-3 transition-all shadow-sm">
-                    <i class="fa-solid fa-envelope"></i> Email Me
-                </a>
-                <a href="Vallabh_Sawant_Resume.docx" download class="px-6 py-3.5 rounded-xl white-card text-slate-800 hover:text-blue-600 flex items-center gap-3 transition-all">
-                    <i class="fa-solid fa-file-arrow-down text-blue-600"></i> Download Resume
-                </a>
-                <a href="https://www.linkedin.com/in/vallabh-sawant/" target="_blank" class="px-6 py-3.5 rounded-xl white-card text-slate-800 hover:text-blue-600 flex items-center gap-3 transition-all">
-                    <i class="fa-brands fa-linkedin text-blue-600 text-lg"></i> LinkedIn Profile
-                </a>
-            </div>
-
-            <div class="text-xs text-slate-400 font-semibold tracking-wide">
-                Vallabh Satish Sawant · Greeley, CO
+    <section id="contact" class="py-12 px-6 bg-white border-t border-slate-100">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-slate-900 mb-2">Let's Connect</h2>
+            <p class="text-slate-500 text-xs mb-6">Open to executive business analytics discussions, S&OP leadership, or strategic consulting engagements.</p>
+            <div class="flex justify-center gap-4 text-xs font-bold">
+                <a href="mailto:vallabh.sawant@gmail.com" class="text-blue-600 hover:underline">vallabh.sawant@gmail.com</a>
+                <span class="text-slate-300">•</span>
+                <a href="tel:9083928929" class="text-slate-600 hover:underline">(908) 392-8929</a>
+                <span class="text-slate-300">•</span>
+                <span class="text-slate-500">Greeley, CO</span>
             </div>
         </div>
     </section>
 
-    <!-- Filter Script -->
-    <script>
-        function filterSkills(category) {
-            const cards = document.querySelectorAll('.skill-card');
-            const buttons = document.querySelectorAll('.filter-btn');
-
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-blue-600', 'text-white');
-                btn.classList.add('white-card', 'text-slate-700');
-            });
-            event.currentTarget.classList.add('bg-blue-600', 'text-white');
-            event.currentTarget.classList.remove('white-card', 'text-slate-700');
-
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
-    </script>
 </body>
 </html>
